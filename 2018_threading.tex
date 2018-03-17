@@ -1,10 +1,11 @@
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,twocolumn,12pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
 \usepackage{multicol}
 \usepackage{ulem}
 
 \pagestyle{empty}
+\setlength{\columnsep}{2em}
 \title{A Survey of Hardware Multithreading}
 \author{Sol Boucher \\ Carnegie Mellon University \\ sboucher@cs.cmu.edu}
 \date{}
@@ -12,7 +13,6 @@
 \begin{document}
 \maketitle
 \thispagestyle{empty}
-\begin{multicols}{2}
 
 \section*{Abstract}
 I'm just going to assume you already read the title.
@@ -29,7 +29,7 @@ We remind the reader that we were suffering from a pair of ripped pants at the t
 We hadn't expected the pair of pants in question to be ripped, and this misprediction led to a stall in our laundry pipeline.
 This resulted in a phenomenon we'll refer to as \textit{cold legs}, so we began eyeing our bed as a potential location to continue the research.
 In the interest of full disclosure, there are a few admissions we should make about this test bed:
-\columnbreak
+\pagebreak
 \begin{itemize}
 \item It could have been better made.
 \item We briefly attempted to remedy this issue, but ultimately concluded that this is a hard problem.
@@ -77,5 +77,4 @@ Without Her assistance, the market economy would never have been able to capture
 \section*{References}
 ``For the absence of a bibliography\footnote{or citation for this quotation} I offer neither explanation nor apology.''
 
-\end{multicols}
 \end{document}
