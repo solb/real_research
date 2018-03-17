@@ -39,7 +39,7 @@ In the interest of full disclosure, there are a few admissions we should make ab
 
 \section{Design}
 The core idea of multithreading is, of course, to improve efficiency by performing parallel work.
-To begin our investigation, we attached multiple threads to the same needle, as shown in figure~\ref{fig:thread}.
+To begin our investigation, we attached multiple threads to the same needle, as shown in Figure~\ref{fig:thread}.
 While this sounds like a simple process, care must be taken to ensure that each individual thread is attached directly to the needle, as tying them end-to-end does not increase parallelism.
 
 \begin{figure}[h]
@@ -72,7 +72,7 @@ Although it seemed inappropriate for the repair in question, an investigation in
 As more threads become involved, managing concurrency becomes increasingly critical; therefore, an investigation into the threading of eyebrows, locks, and other synchronization mechanisms is also in order.
 
 \section{Conclusion}
-As foreshadowed in section~\ref{sec:parallelism}, we suggest that future hardware include a larger loop thing so the needle can accommodate more threads.
+As foreshadowed in Section~\ref{sec:parallelism}, we suggest that future hardware include a larger loop thing so the needle can accommodate more threads.
 That said, the limited amount of parallelism we were able to achieve resulted in a pair of pants that allowed us to leave the test bed but not the house.
 We take the fact that we couldn't wear them in public as an indication that the problem is embarrassingly parallel.
 
