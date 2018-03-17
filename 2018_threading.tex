@@ -1,7 +1,7 @@
 \documentclass[letterpaper,twocolumn,12pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
-\usepackage{multicol}
+\usepackage{graphicx}
 \usepackage{ulem}
 
 \pagestyle{empty}
@@ -39,8 +39,14 @@ In the interest of full disclosure, there are a few admissions we should make ab
 
 \section{Design}
 The core idea of multithreading is, of course, to improve efficiency by performing parallel work.
-To begin our investigation, we attached multiple threads to the same needle.
+To begin our investigation, we attached multiple threads to the same needle, as shown in figure~\ref{fig:thread}.
 While this sounds like a simple process, care must be taken to ensure that each individual thread is attached directly to the needle, as tying them end-to-end does not increase parallelism.
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{thread}
+\caption{Multithreading}
+\label{fig:thread}
+\end{figure}
 
 \section{SMT}
 Before tying the threads to the needle, we discovered that they were asymmetrically threaded.
